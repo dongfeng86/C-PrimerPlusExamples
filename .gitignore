@@ -34,3 +34,5 @@ Release/
 *.exe
 *.out
 *.app
+
+*.VC.db
