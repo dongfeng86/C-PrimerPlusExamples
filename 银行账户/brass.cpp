@@ -79,7 +79,7 @@ BrassPlus::BrassPlus(const Brass & ba, double m1, double r)
 	rate = r;
 }
 //重新定义了这个虚函数
-void BrassPlus::ViewAcct() const
+void BrassPlus::ViewAcct() const                //在可以的情况下，应当尽量使用const关键字
 {
 	format initialState = setFormat();
 	precis prec = cout.precision(2);
@@ -98,7 +98,7 @@ void BrassPlus::WithDraw(double amt)
 	format initialState = setFormat();
 	precis prec = cout.precision(2);
 
-	double bal = Balance();                //派生类继承了基类的Balance函数
+	double bal = Balance();                                    //派生类继承了基类的Balance函数
 	if (amt <= bal)
 		Brass::WithDraw(amt);
 	else if (amt <= bal + maxLoan - owesBank)

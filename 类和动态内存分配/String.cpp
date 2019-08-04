@@ -81,7 +81,7 @@ char & String::operator[](int i)
 	return str[i];
 }
 
-const char & String::operator[](int i) const       //请注意，函数特征标区分const和非const参数
+const char & String::operator[](int i) const       //请注意，函数特征标区分const和非const参数；这个函数专门用来处理常量字符串
 {
 	return str[i];
 }
