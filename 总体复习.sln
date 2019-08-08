@@ -33,11 +33,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SAL概述", "SAL概述\SAL�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "队列模拟", "队列模拟\队列模拟.vcxproj", "{60B7DD25-79FB-4EB2-B6DA-B9DEFEE7C97D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "银行账户", "银行账户\银行账户.vcxproj", "{EFFBDC76-2141-44A5-B8C3-44CA572C39DB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承之银行账户", "银行账户\银行账户.vcxproj", "{EFFBDC76-2141-44A5-B8C3-44CA572C39DB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "子类使用动态内存分配和友元", "子类使用动态内存分配和友元\子类使用动态内存分配和友元.vcxproj", "{F8E4D3F9-C599-4CC1-BCBE-B9E38EA34D24}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "抽象基类", "抽象基类\抽象基类.vcxproj", "{C6398D26-6D77-45B7-9DA1-965239A2074E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承之多重继承", "类继承之多重继承\类继承之多重继承.vcxproj", "{B4E62F65-3869-4F36-A7D6-9B590C2A954B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -187,6 +189,14 @@ Global
 		{C6398D26-6D77-45B7-9DA1-965239A2074E}.Release|x64.ActiveCfg = Release|Win32
 		{C6398D26-6D77-45B7-9DA1-965239A2074E}.Release|x86.ActiveCfg = Release|Win32
 		{C6398D26-6D77-45B7-9DA1-965239A2074E}.Release|x86.Build.0 = Release|Win32
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Debug|x64.ActiveCfg = Debug|x64
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Debug|x64.Build.0 = Debug|x64
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Debug|x86.ActiveCfg = Debug|Win32
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Debug|x86.Build.0 = Debug|Win32
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x64.ActiveCfg = Release|x64
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x64.Build.0 = Release|x64
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x86.ActiveCfg = Release|Win32
+		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
