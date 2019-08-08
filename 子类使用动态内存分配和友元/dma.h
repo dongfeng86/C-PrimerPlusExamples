@@ -36,7 +36,8 @@ public:
 	hasDMA(const char * s="none",const char * l="null",int r=0);
 	hasDMA(const char * s,const baseDMA & rs);
 	hasDMA(const hasDMA & hs);
-	~hasDMA();
+	//派生类的析构函数十分有趣，它总是首先执行自己的代码，然后自动调用基类的析构函数。
+	~hasDMA();     
 	hasDMA & operator=(const hasDMA & rs);
 	friend std::ostream & operator <<(std::ostream & os,const hasDMA & rs);
 };

@@ -71,15 +71,18 @@ hasDMA::hasDMA(const char * s/*="none"*/,const char * l/*="null"*/,int r/*=0*/)
 }
 
 hasDMA::hasDMA(const char * s,const baseDMA & rs)
-	:baseDMA(rs)
+	:baseDMA(rs)           
 {
 	style=new char[std::strlen(s)+1];
 	strcpy_s(style,std::strlen(s)+1,s);
 }
 
 //此赋值构造函数必须要有，因为有动态内存分配
+/*这个用法很重要，如何定义子类的复制构造函数，虽然没有参数类型为hasDMA引用的baseDMA构造函数；但是复制
+构造函数baseDMA有一个baseDMA的引用参数，可以指向派生类型。因此，baseDMA复制构造函数将使用hasDMA参数的
+baseDMA部分来构造新对象的baseDMA部分*/
 hasDMA::hasDMA(const hasDMA & hs)
-	:baseDMA(hs)
+	:baseDMA(hs)                    
 {
 	style =new char[std::strlen(hs.style)+1];
 	strcpy_s(style,std::strlen(hs.style)+1,hs.style);
@@ -94,7 +97,7 @@ hasDMA & hasDMA::operator=(const hasDMA & rs)
 {
 	if(this==& rs)
 		return * this;
-	baseDMA::operator =(rs);
+	baseDMA::operator =(rs);              //这个实在是太经典了，它揭示了如何调用基类的赋值运算符
 	delete [] style;
 	style=new char[std::strlen(rs.style)+1];
 	strcpy_s(style,std::strlen(rs.style)+1,rs.style);
@@ -107,5 +110,3 @@ std::ostream & operator <<(std::ostream & os,const hasDMA & rs)
 	os<<"style:"<<rs.style<<std::endl;
 	return os;
 }
-
-
