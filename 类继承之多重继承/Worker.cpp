@@ -1,5 +1,6 @@
 #include "Worker.h"
 #include<iostream>
+
 using std::cout;
 using std::cin;
 using std::endl;
@@ -17,6 +18,11 @@ void Worker::Get()
 	cin >> m_lId;
 	while (cin.get()!='\n')
 		continue;
+}
+
+Worker::~Worker()
+{
+
 }
 
 void Waiter::Data() const
@@ -70,11 +76,18 @@ void Singer::Get()
 
 char * Singer::m_pv[Singer::Vtypes] = { "other","alot","contalto","soprano","bass","baritone","tenor"};
 
-void Singer::set()
+void Singer::Set()
 {
 	cout << "enter singer's name: ";
 	Worker::Get();
 	Get();
+}
+
+void Singer::Show() const
+{
+	cout << "category:singer\n";
+	Worker::Data();
+	Data();
 }
 
 void SingingWaiter::Data() const

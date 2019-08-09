@@ -16,8 +16,11 @@ public:
 	Worker():m_fullname("no one"),m_lId(0){ }
 	Worker(const std::string & s,long n)
 		:m_fullname(s),m_lId(n){ }
-	virtual ~Worker() = 0;                //=0 指出这是纯虚函数，在类中可以定义也可以不定义
-	virtual void Set() = 0;               //纯虚函数
+
+	/*=0 指出这是纯虚函数，在类中可以定义也可以不定义;但是，在基类中将
+	析构函数设为虚的，是一个惯例；另外，即便基类析构函数是纯虚的，也必须定义*/
+	virtual ~Worker() = 0;                
+	virtual void Set() = 0;               //纯虚函数，注意，如果说子类没有覆写纯虚函数，子类也会成为抽象类
 	virtual void Show() const = 0;        //纯虚函数
 };
 
@@ -54,8 +57,8 @@ public:
 		:Worker(s,n),m_iVoice(v){ }
 	Singer(const Worker & wk,int v=other)
 		:Worker(wk),m_iVoice(v){ }
-	void set();
-	void show() const;
+	void Set();
+	void Show() const;
 };
 
 //下面类是多重继承
