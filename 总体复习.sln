@@ -19,27 +19,29 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "函数", "函数\函数.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "引用参数及返回引用类型", "引用参数\引用参数.vcxproj", "{B745065B-1F9D-41A2-AEB6-B2261A603AD7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "对象和类经典模板", "对象和类经典模板\对象和类经典模板.vcxproj", "{763CF248-D01E-4CA3-A1FB-E26EB180C5CF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类使用1基本操作", "对象和类经典模板\对象和类经典模板.vcxproj", "{763CF248-D01E-4CA3-A1FB-E26EB180C5CF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类友元函数及运算符重载", "类友元函数及运算符重载\类友元函数及运算符重载.vcxproj", "{595C4FEC-194B-4119-BC82-908FCD43D39E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类使用2友元函数及运算符重载", "类友元函数及运算符重载\类友元函数及运算符重载.vcxproj", "{595C4FEC-194B-4119-BC82-908FCD43D39E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "include用法", "include用法\include用法.vcxproj", "{B3A9D011-D41F-44BA-9E58-3266C6606062}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类和动态内存分配", "类和动态内存分配\类和动态内存分配.vcxproj", "{51282566-46B7-43B2-9F1C-8E0ED1200777}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类使用3成员内存动态内存", "类和动态内存分配\类和动态内存分配.vcxproj", "{51282566-46B7-43B2-9F1C-8E0ED1200777}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "标准CSting类的使用", "标准CSting类的使用\标准CSting类的使用.vcxproj", "{7A2574B8-4E7C-4733-9BBB-6FCDFAC72EA3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SAL概述", "SAL概述\SAL概述.vcxproj", "{0705F7B9-66B4-4FA3-B1C5-B5FD0AB6BA81}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "队列模拟", "队列模拟\队列模拟.vcxproj", "{60B7DD25-79FB-4EB2-B6DA-B9DEFEE7C97D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类使用4队列模拟", "队列模拟\队列模拟.vcxproj", "{60B7DD25-79FB-4EB2-B6DA-B9DEFEE7C97D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承之银行账户", "银行账户\银行账户.vcxproj", "{EFFBDC76-2141-44A5-B8C3-44CA572C39DB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承1银行账户", "银行账户\银行账户.vcxproj", "{EFFBDC76-2141-44A5-B8C3-44CA572C39DB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "子类使用动态内存分配和友元", "子类使用动态内存分配和友元\子类使用动态内存分配和友元.vcxproj", "{F8E4D3F9-C599-4CC1-BCBE-B9E38EA34D24}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承3子类使用动态内存分配和友元", "子类使用动态内存分配和友元\子类使用动态内存分配和友元.vcxproj", "{F8E4D3F9-C599-4CC1-BCBE-B9E38EA34D24}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "抽象基类", "抽象基类\抽象基类.vcxproj", "{C6398D26-6D77-45B7-9DA1-965239A2074E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承2抽象基类", "抽象基类\抽象基类.vcxproj", "{C6398D26-6D77-45B7-9DA1-965239A2074E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承之多重继承", "类继承之多重继承\类继承之多重继承.vcxproj", "{B4E62F65-3869-4F36-A7D6-9B590C2A954B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承4多重继承", "类继承之多重继承\类继承之多重继承.vcxproj", "{B4E62F65-3869-4F36-A7D6-9B590C2A954B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类1栈模拟", "模板类1栈模拟\模板类1栈模拟.vcxproj", "{BD9846B9-1228-43D9-8137-7859FCCE876E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -197,6 +199,14 @@ Global
 		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x64.Build.0 = Release|x64
 		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x86.ActiveCfg = Release|Win32
 		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x86.Build.0 = Release|Win32
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Debug|x64.ActiveCfg = Debug|x64
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Debug|x64.Build.0 = Debug|x64
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Debug|x86.ActiveCfg = Debug|Win32
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Debug|x86.Build.0 = Debug|Win32
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Release|x64.ActiveCfg = Release|x64
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Release|x64.Build.0 = Release|x64
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Release|x86.ActiveCfg = Release|Win32
+		{BD9846B9-1228-43D9-8137-7859FCCE876E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
