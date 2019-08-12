@@ -12,8 +12,8 @@ int main()
 	std::cin >> iStackSize;
 	Stack<const char *> st(iStackSize);
 
-	/*这里有个奇妙的问题，字符串常量在编译器中实际是const char *类型，指针指向的内容为常量	；自己曾试图让指针数组为
-	非常量类型，以期改变某个字符串的某个字符值，结果失败。	但是，字符串确实可以赋值给指向非const 类型的指针*/
+	/*这里有个奇妙的问题，字符串常量在编译器中实际是const char *类型，指针指向的内容为常量；自己曾试图让指针数组为
+	非常量类型，以期改变某个字符串的某个字符值，结果失败。但是，字符串确实可以赋值给指向非const类型的指针*/
 	/*const*/ char * szIn[Num] = {
 		"1:hank gilgmes",
 		"2:KiKi Ishtar",

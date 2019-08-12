@@ -1,9 +1,13 @@
-//stack.h ,该头文件用于模拟栈的使用
+//stack.h ,该头文件采用模板类的方法，模拟栈的使用。
+//模板不是类和成员函数的定义，模板是C++编译器指令，不能将模板成员函数放在独立的实现文件中。
+//最简单的方式是将所有模板信息放在一个头文件当中，并在要使用模板的文件中包含该头文件。
+
 #ifndef STACK_H_
 #define STACK_H_
 
 /*下面定义了一个模板类，注意，它是以template <class type>打头；
-关键字class 可以用 typename替代*/
+关键字class 可以用 typename替代
+*/
 template <class Type>
 class Stack
 {
@@ -13,13 +17,13 @@ private:
 	Type * m_pItems;
 	int m_iTop;
 public:
-	explicit Stack(int ss = SIZE);   //这里使用explict避免隐式变换
+	explicit Stack(int ss = SIZE);             //这里使用explict避免隐式变换
 	Stack(const Stack & st);
 	~Stack() { delete[] m_pItems; }
 	bool IsEmpty() { return m_iTop == 0; }
 	bool IsFull() { return m_iTop == m_iStackSize; }
-	bool push(const Type & item);    //在栈中增加一个数据
-	bool pop(Type & item);           //在栈中弹出一个数据
+	bool push(const Type & item);             //在栈中增加一个数据
+	bool pop(Type & item);                    //在栈中弹出一个数据
 	Stack & operator=(const Stack & st);      //可以在模板类声明中采用简写的Stack，代表Stack<Type>
 };
 
@@ -84,7 +88,6 @@ Stack<Type> & Stack<Type>::operator=(const Stack/*<Type>*/ & st)
 	}
 	return *this;
 }
-
 
 #endif // !STACK_H_
 

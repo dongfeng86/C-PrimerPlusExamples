@@ -41,7 +41,7 @@ public:
 	void Show() const;
 };
 
-class Singer :virtual public Worker
+class Singer :virtual public Worker       //注意，这里时虚基类
 {
 protected:
 	enum{other,alto,contralto,soprano,bass,baritone,tenor};
