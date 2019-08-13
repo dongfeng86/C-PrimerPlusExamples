@@ -37,8 +37,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类1栈模拟", "模�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类2数组模拟(包含非类型参数)", "模板类2数组模拟(非类型参数)\模板类2数组模拟(非类型参数).vcxproj", "{E3DD1F51-D92E-480A-AA4F-6252A89C4635}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类4约束模板友元函数", "模板类3约束模板友元函数\模板类3约束模板友元函数.vcxproj", "{6121A4E1-87D6-4AB4-8572-B370E27F36EA}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类3非模板友元函数", "模板类3非模板友元函数\模板类3非模板友元函数.vcxproj", "{E60ECEDD-B710-4077-96E7-62B2B8AF2549}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类5非约束模板友元函数", "模板类5非约束模板友元函数\模板类5非约束模板友元函数.vcxproj", "{CA1188E6-4B67-41D4-A0F8-BE7515D953F7}"
@@ -52,6 +50,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承3子类使用动态内存分配和友元", "类继承3子类使用动态内存分配和友元\子类使用动态内存分配和友元.vcxproj", "{F8E4D3F9-C599-4CC1-BCBE-B9E38EA34D24}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类继承4多重继承", "类继承4多重继承\类继承之多重继承.vcxproj", "{B4E62F65-3869-4F36-A7D6-9B590C2A954B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "模板类4约束模板友元函数", "模板类4约束模板友元函数\模板类3约束模板友元函数.vcxproj", "{6121A4E1-87D6-4AB4-8572-B370E27F36EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -197,14 +197,6 @@ Global
 		{E3DD1F51-D92E-480A-AA4F-6252A89C4635}.Release|x64.Build.0 = Release|x64
 		{E3DD1F51-D92E-480A-AA4F-6252A89C4635}.Release|x86.ActiveCfg = Release|Win32
 		{E3DD1F51-D92E-480A-AA4F-6252A89C4635}.Release|x86.Build.0 = Release|Win32
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x64.ActiveCfg = Debug|x64
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x64.Build.0 = Debug|x64
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x86.ActiveCfg = Debug|Win32
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x86.Build.0 = Debug|Win32
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x64.ActiveCfg = Release|x64
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x64.Build.0 = Release|x64
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x86.ActiveCfg = Release|Win32
-		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x86.Build.0 = Release|Win32
 		{E60ECEDD-B710-4077-96E7-62B2B8AF2549}.Debug|x64.ActiveCfg = Debug|x64
 		{E60ECEDD-B710-4077-96E7-62B2B8AF2549}.Debug|x64.Build.0 = Debug|x64
 		{E60ECEDD-B710-4077-96E7-62B2B8AF2549}.Debug|x86.ActiveCfg = Debug|Win32
@@ -257,6 +249,14 @@ Global
 		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x64.Build.0 = Release|x64
 		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x86.ActiveCfg = Release|Win32
 		{B4E62F65-3869-4F36-A7D6-9B590C2A954B}.Release|x86.Build.0 = Release|Win32
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x64.ActiveCfg = Debug|x64
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x64.Build.0 = Debug|x64
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x86.ActiveCfg = Debug|Win32
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Debug|x86.Build.0 = Debug|Win32
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x64.ActiveCfg = Release|x64
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x64.Build.0 = Release|x64
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x86.ActiveCfg = Release|Win32
+		{6121A4E1-87D6-4AB4-8572-B370E27F36EA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
