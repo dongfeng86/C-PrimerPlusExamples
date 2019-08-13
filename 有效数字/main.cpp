@@ -11,7 +11,7 @@ int main()
 	const float million = 1.0e6;
 
 	cout << "tub= " << tub;
-	cout << ", a million tubs= " <<s million*tub;
+	cout << ", a million tubs= " <<million*tub;
 	cout << ",\nand ten million tubs= ";
 	cout << 10 * million*tub << endl;
 

@@ -2,12 +2,20 @@
 #ifndef ARRAYTP_H_
 #define ARRAYTP_H_
 
+/*模板类的前向声明，否则，模板类的约束友元函数声明中无法包含ArrayTP<T,n>*/
+template<class T,int n>
+class ArrayTP;
+
+template<class T,int n>
+std::ostream & operator<<(std::ostream & os, ArrayTP<T, n> & ar);
+
 /*在该模板中，数组元素的类型为T，数组元素的数量为n*/
 template<class T,int n>
 class ArrayTP
 {
 private:
 	T * m_pItems;
+	int nNum;
 public:
 	ArrayTP();
 	~ArrayTP();
@@ -17,14 +25,15 @@ public:
 	T & operator[](int i);                         //允许写入第i个元素
 	const T & operator[](int i) const;             //仅仅允许读取第i个元素
 
-	////创建一个显示元素的友元函数
-	//friend std::ostream & operator<<(std::ostream os, ArrayTP<T,n> & ar);
+	//创建一个显示元素的友元函数.注意，友元函数中函数名后面必须要有<>，否则，这就变为了非模板友元函数.
+	friend std::ostream & operator<< </*T,n*/>(std::ostream & os, ArrayTP<T,n> & ar);       
 };
 
 template<class T, int n>
 inline ArrayTP<T, n>::ArrayTP()
 {
-	m_pItems = new T[n];      
+	m_pItems = new T[n];  
+	nNum = n;
 }
 
 template<class T, int n>
@@ -85,5 +94,16 @@ inline const T & ArrayTP<T, n>::operator[](int i) const
 	return m_pItems[i];
 }
 
+//模板约束友元函数
+template<class T, int n>
+std::ostream & operator<<(std::ostream & os, ArrayTP<T, n> & ar)
+{
+	os << "数组的元素为：" << std::endl;
+	for (int i = 0; i < n; i++)
+	{
+		os << ar.m_pItems[i] << std::endl;
+	}
+	return os;
+}
 
 #endif // !ARRAYTP_H_
