@@ -4,6 +4,13 @@
 int main()
 {
 	using namespace std;
+	//指针到底占几位，在X86的情况下占据32位，在X64的情况下占据64位。
+	cout << "现在，我们看下指针到底占几位？" << endl;
+	cout << "一个int型占据：" << sizeof(int) << endl;
+	cout << "一个int *型占据：" << sizeof(int *) << endl;
+	cout << "一个double型占据:" << sizeof(double) << endl;
+	cout << "一个double * 型占据：" << sizeof(double *) << endl;
+
 	//多维数组数组名代表多级指针
 	int zippo[4][2]=
 	{
