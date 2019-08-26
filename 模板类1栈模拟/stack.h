@@ -73,6 +73,8 @@ bool Stack<Type>::pop(Type & item)
 		return false;
 }
 
+//因为采用了动态内存分配，所以，需要重载赋值运算符；同样的，在模板声明或者模板函数定义内部，可以使用缩写版的Stack；
+//在类的外部，即指定返回类型或者使用作用域解析运算符时必须使用Stack<Type>
 template<class Type>
 Stack<Type> & Stack<Type>::operator=(const Stack/*<Type>*/ & st)
 {

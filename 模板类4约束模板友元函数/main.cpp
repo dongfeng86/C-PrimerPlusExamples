@@ -22,7 +22,7 @@ public:
 	HasFriend(const TT & i) :item(i) { ct++; }
 	~HasFriend() { ct--; }
 
-	//以下两句并不是说要生成模板函数的具体化，而是说该具体化的模板函数是友元函数。编译器正真给出具体化的定义实在main函数调用模板函数时
+	//以下两句并不是说要生成模板函数的具体化，而是说该具体化的模板函数是友元函数。编译器给出具体化的定义实在main函数调用模板函数时
 	friend void counts<TT>();                       
 	friend void report<>(HasFriend<TT> &);          
 };

@@ -16,7 +16,7 @@ public:
 	friend void reports(HasFriend<T> &);
 };
 
-//每一个具体化都会有他自己的静态数据
+//每一个具体化都会有他自己的静态数据；注意这里竟然初始化的是一个private型静态变量
 template<class T>
 int HasFriend<T>::ct = 0;
 
@@ -58,4 +58,3 @@ int main()
 
 	return 0;
 }
-

@@ -1,5 +1,5 @@
 /*该文件是ArrayTP.h的一个改进版，在ArrayTP中，模板类的友元是通过约束模板友元函数来实现的，
-但是在ArrayTP(another method).h当中，采用的是模板类的约束模板友元函数*/
+但是在ArrayTP(another method).h当中，采用的是模板类的非约束模板友元函数*/
 #ifndef ARRAYTP_H_
 #define ARRAYTP_H_
 
@@ -13,12 +13,12 @@ public:
 	ArrayTP();
 	~ArrayTP();
 
-	ArrayTP(const ArrayTP & ar);               //复制构造函数
-	ArrayTP & operator=(const ArrayTP & ar);   //重载赋值运算符
+	ArrayTP(const ArrayTP & ar);                   //复制构造函数
+	ArrayTP & operator=(const ArrayTP & ar);       //重载赋值运算符
 	T & operator[](int i);                         //允许写入第i个元素
 	const T & operator[](int i) const;             //仅仅允许读取第i个元素
 
-	template<class T,int n>
+	template<class T,int n>                        //这个是模板类的非约束模板友元函数
 	friend std::ostream & operator<<(std::ostream & os, ArrayTP<T, n> & ar);
 };
 

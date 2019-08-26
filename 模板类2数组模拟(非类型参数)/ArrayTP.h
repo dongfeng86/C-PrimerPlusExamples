@@ -25,6 +25,7 @@ public:
 	T & operator[](int i);                         //允许写入第i个元素
 	const T & operator[](int i) const;             //仅仅允许读取第i个元素
 
+	//这个是模板类的约束模板友元函数
 	//创建一个显示元素的友元函数.注意，友元函数中函数名后面必须要有<>，否则，这就变为了非模板友元函数.
 	friend std::ostream & operator<< </*T,n*/>(std::ostream & os, ArrayTP<T,n> & ar);       
 };
