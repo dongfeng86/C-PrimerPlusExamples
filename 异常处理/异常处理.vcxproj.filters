@@ -23,5 +23,8 @@
     <ClCompile Include="ec_mean.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="一个关于栈解退的详细例子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

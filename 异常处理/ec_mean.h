@@ -7,7 +7,6 @@ try...catchÄ£¿éÍ¨¹ýthrowÓï¾ä·µ»ØÒì³£ÀàÐÍ£¨×Ö·û´®»òÕßÊÇÀàÀàÐÍ£©£¬È»ºóÍ¨¹ýcatchÄ£¿
 ÐÅÏ¢½øÐÐÊä³ö»òÕß´¦Àí¡£
 */
 
-
 #pragma once
 #include<iostream>
 
