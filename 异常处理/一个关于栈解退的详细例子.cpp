@@ -44,6 +44,7 @@ int main()
 			try
 			{
 				demo d3("found in try");              //如果捕捉到了异常，d3也会被析构。实际上是try块到相应的catch块之间自动变量都会被析构
+				                                      //注意，如果异常解退到这个try块，则程序会执行到相应的catch块，这个try块所有变量都会被析构
 				z = means(x, y);
 				cout << "the mean mean of " << x << " and " << y << " is " << z << endl;
 				cout << "enter next pair:\n";
@@ -111,3 +112,4 @@ double means(double a, double b)
 	d2.show();
 	return(am + hm + gm) / 3.0;
 }
+
