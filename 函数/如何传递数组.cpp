@@ -17,6 +17,11 @@ void Swap(T &a, T &b);
 
 int main()
 {
+#ifdef __cplusplus
+	std::cout << "该文件定义了__cplusplus!\n";
+
+#endif // __cplusplus
+
 
 	//调用模板函数
 	int i = 10;

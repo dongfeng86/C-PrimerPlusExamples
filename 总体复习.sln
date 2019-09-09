@@ -57,7 +57,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "友元类1", "友元类1\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "类中成员的自动初始化", "类中成员的自动初始化\类中成员的自动初始化.vcxproj", "{B75BF6B9-4E1A-4942-85A3-0538B1C8A638}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "异常处理", "异常处理\异常处理.vcxproj", "{AE9A2950-0D68-4580-B98B-2345BA8A3C1B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "异常处理1", "异常处理\异常处理.vcxproj", "{AE9A2950-0D68-4580-B98B-2345BA8A3C1B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "异常机制2（标准异常）", "异常机制2（标准异常）\异常机制2（标准异常）.vcxproj", "{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -287,6 +289,14 @@ Global
 		{AE9A2950-0D68-4580-B98B-2345BA8A3C1B}.Release|x64.Build.0 = Release|x64
 		{AE9A2950-0D68-4580-B98B-2345BA8A3C1B}.Release|x86.ActiveCfg = Release|Win32
 		{AE9A2950-0D68-4580-B98B-2345BA8A3C1B}.Release|x86.Build.0 = Release|Win32
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Debug|x64.ActiveCfg = Debug|x64
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Debug|x64.Build.0 = Debug|x64
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Debug|x86.ActiveCfg = Debug|Win32
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Debug|x86.Build.0 = Debug|Win32
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Release|x64.ActiveCfg = Release|x64
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Release|x64.Build.0 = Release|x64
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Release|x86.ActiveCfg = Release|Win32
+		{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

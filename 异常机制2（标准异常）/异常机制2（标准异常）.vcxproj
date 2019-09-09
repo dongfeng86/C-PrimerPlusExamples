@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AE9A2950-0D68-4580-B98B-2345BA8A3C1B}</ProjectGuid>
+    <ProjectGuid>{DB92FED0-9BE8-4D0F-8C24-20329EE6FC6D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>异常处理</RootNamespace>
+    <RootNamespace>异常机制2（标准异常）</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>异常处理1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,11 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ec_mean.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ec_mean.cpp" />
-    <ClCompile Include="一个关于栈解退的详细例子.cpp" />
+    <ClCompile Include="标准异常的使用.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
