@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{952E1429-6352-4457-AB7B-05A0468B7A4F}</ProjectGuid>
+    <ProjectGuid>{A9A08993-34EE-4A33-9747-66E6C23B25EE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>string类使用</RootNamespace>
+    <RootNamespace>string类</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,7 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="string.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
