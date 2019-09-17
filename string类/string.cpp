@@ -33,13 +33,13 @@ int main()
 
 	char szAlls[] = "All is well that ends well";
 
-	string sFive(szAlls, 20);
+	string sFive(szAlls, 20);                     //构造szAlls的前20个字符
 	cout << sFive << endl;
 
 	string sSix(szAlls + 6, szAlls + 10);         //第一个参数用于寻址要插入的源范围中的第一个元素，第二个参数用于寻址要插入的源范围中超出最后一个元素的元素的位置。
 	cout << sSix << ", ";
 	
-	string sSeven(&sFive[6], &sFive[10]);
+	string sSeven(&sFive[6], &sFive[10]);         //sFive本身是string类型的对象，不像数组一样是个地址；所以这里要用取地址运算符
 	cout << sSeven << endl;
 
 	string sEight(sFour, 7, 16);                  //从第7个字符开始，一直向后复制16个字符
@@ -60,7 +60,7 @@ int main()
 	cin.getline(charr, 20);
 	cout << "you entered: " << charr << endl;
 	cout << "enter anoter line of text:\n";
-	getline(cin, str);
+	getline(cin, str);                                      //这时string类的标准输入方法
 	cout << "you entered: " << str << endl;
 	cout << "length of string in charr after input:"
 		<< strlen(charr) << endl;

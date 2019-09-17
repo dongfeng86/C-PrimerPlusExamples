@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B3AC85F7-1AA1-4349-B54C-D650379C12F3}</ProjectGuid>
+    <ProjectGuid>{A6123759-2016-4C67-8702-52D32DF49AFC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>STL之vector</RootNamespace>
+    <RootNamespace>STL3vector反向迭代器</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>STL1vector基本用法</ProjectName>
+    <ProjectName>STL3vector各种迭代器</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,7 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="vect.cpp" />
+    <ClCompile Include="copyit.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

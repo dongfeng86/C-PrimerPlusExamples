@@ -1,3 +1,6 @@
+/*
+这个文件主要是vector的用法，实际上vector是STL标准模板库中类的一个典型代表
+*/
 #include<iostream>
 #include<string>
 #include<vector>
@@ -36,10 +39,19 @@ int main()
 		{
 			ShowReview(*pIter);
 		}
+
+		//换一种做法，不用迭代器，用普通方法。虽然可行，但是STL中并不是每个类都支持随机访问，以下方法并不通用
+		cout << "现在，我们看下传统的for循环能够起作用：\n";
+		for (int i = 0; i < arBooks.size(); i++)
+		{
+			ShowReview(arBooks[i]);
+		}
+
+		//下面，复制和交换两个vector
 		vector<SReview> arOldList(arBooks);                     //复制已经创建的vector数组
 		if (iNum > 3)
 		{
-			//删除两个元素
+			//删除两个元素，分别为第二个元素和第3个元素，第2个参数实际上是一个超尾
 			arBooks.erase(arBooks.begin() + 1, arBooks.begin() + 3);
 			cout << "After erasure:\n";
 			for (pIter = arBooks.begin(); pIter != arBooks.end(); pIter++)
@@ -50,7 +62,7 @@ int main()
 			for (pIter = arBooks.begin(); pIter != arBooks.end(); pIter++)
 				ShowReview(*pIter);
 		}
-		arBooks.swap(arOldList);
+		arBooks.swap(arOldList);                                //交换两个vector
 		cout << "Swapping Oldlist with books:\n";
 		for (pIter = arBooks.begin(); pIter != arBooks.end(); pIter++)
 			ShowReview(*pIter);
@@ -70,7 +82,7 @@ bool FillReview(SReview &rr)
 	std::cin >> rr.iRating;               //cin跳过空格，读取字符串，并将最后一个不匹配的字符留在输入队列中
 	if (!std::cin)
 		return false;                     //如果输入了非整数，那么错误，函数返回
-	while (std::cin.get() != '\n')        //cin.get()取出一个字符，回车也不例外。这一行是把cin留下的回车符从输入流中取出
+	while (std::cin.get() != '\n')        //cin.get()取出下一个字符，回车也不例外。这一行是把cin留下的回车符从输入流中取出
 		continue;
 	return true;
 }
