@@ -16,6 +16,7 @@ int main()
 	string arS2[2] = { "busy","bats" };
 	string arS3[2] = { "silly","singers" };
 	vector<string> arWords(4);
+	//vector<string> arWords;               //注意，如果vector<string>对象不给出长度的话，后面的copy函数会出错
 
 	//复制普通数组到vector数组当中
 	cout << "now let us see the elements in vector:\n";
