@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D3AE79C6-1CDE-4108-9BB1-FE5B684BD5F9}</ProjectGuid>
+    <ProjectGuid>{D98D41B6-6BE3-4495-8F4D-50A190536845}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>第17章输入输出</RootNamespace>
+    <RootNamespace>第17章文件输入输出</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>第17章1 输入输出</ProjectName>
+    <ProjectName>第17章3 文件文件读写</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -147,7 +147,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="iostream.cpp" />
+    <ClCompile Include="append.cpp" />
+    <ClCompile Include="fileIO.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
