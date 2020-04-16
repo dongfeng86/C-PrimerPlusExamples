@@ -31,6 +31,16 @@ int main()
 	Swap(i, j);                                    //用的是通用模板，通过函数调用生成一个模板函数实例，也称隐式实例化
 	cout << "now i,j=" << i << "," << j << ".\n";
 
+	/*
+	以下4行主要测试Swap(m,n)和Swap<double>(m,n)两种语句的区别，试验证明，没有区别。
+	也就是说模板函数可以显示的指定类型，也可以通过参数隐式的推断出类型
+	*/
+	double m = 50.2;
+	double n = 4.0;
+	Swap<double>(m, n);
+	cout << "now m,n=" << m << "," << n << ".\n";
+
+
 	Job sue = { "Susan",730.6,7 };
 	Job sidney = { "Sidney",760,9 };
 	cout << "before job swapping:\n";

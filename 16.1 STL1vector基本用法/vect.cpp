@@ -19,6 +19,14 @@ int main()
 {
 	using std::cout;
 	using std::vector;
+
+	//C++11中能够使用这种列表初始化和列表赋值的方法
+	vector<int> arTTemp={ 1,2,3,4,5,8 };
+	arTTemp = { 3,4,5 };
+	for (int m : arTTemp)
+		cout << m << ";";
+	cout << std::endl;
+
 	vector<SReview> arBooks;
 	SReview cTemp;
 	while (FillReview(cTemp))

@@ -8,6 +8,7 @@
 #include "atlbase.h"
 #include "atlstr.h"
 #include "comutil.h"
+#include <atlconv.h>
 //
 //using namespace std;
 //using namespace System;
@@ -22,16 +23,24 @@ using std::cin;
 
 int main()
 {
+	//以下修改于2019.11.8 记录CString与string的相互转换
+	CString sTT = _T("hello ");
+	wcout << (const wchar_t *)sTT << endl;
+	wcout << (LPCTSTR)sTT << endl;
+
+	std::string mmm = CT2A(sTT.GetString());                   //从CString转换为string 
+	cout << mmm << endl;
+
+	CString new1 = CA2T(mmm.c_str());                          //从string转为CString
+	wcout << (LPCTSTR)new1 << endl;                 
+	//以上
+
 	CString s1 = _T("This ");                       // Cascading concatenation
 	s1 += _T("is a ");
 	CString s2 = _T("test");
 	CString message = s1 + _T("big ") + s2;      	// Message contains "This is a big test".
 	wcout << (const wchar_t*)message<<endl;               //注意，这个输出必须要进行显示转换，不然会出错
 	wcout << (LPCTSTR)message << endl;
-
-
-														  // Create and display a C style string, and then use it 
-														  // to create different kinds of strings.
 	char *orig = "Hello, World!";
 	cout << orig << " (char *)" << endl;
 

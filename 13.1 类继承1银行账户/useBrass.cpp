@@ -17,7 +17,6 @@ int main()
 	Piggy.ViewAcct();
 	Hoggy.ViewAcct();
 
-
 	Brass * pClients[CLIENTS];
 	std::string temp;
 	long tempnum;
