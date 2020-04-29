@@ -85,6 +85,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17.5 二进制文件随机�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14.5 模板类5非约束模板友元函数", "14.5 模板类5非约束模板友元函数\14.5 模板类5非约束模板友元函数.vcxproj", "{6B7BA736-163C-4575-851D-1121F48DD7E4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "自动转换函数转换为引用类型", "自动转换函数转换为引用类型\自动转换函数转换为引用类型.vcxproj", "{588F1166-2BD2-408F-8076-BE2730CC7C10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -417,6 +419,14 @@ Global
 		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x64.Build.0 = Release|x64
 		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x86.ActiveCfg = Release|Win32
 		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x86.Build.0 = Release|Win32
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Debug|x64.ActiveCfg = Debug|x64
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Debug|x64.Build.0 = Debug|x64
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Debug|x86.ActiveCfg = Debug|Win32
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Debug|x86.Build.0 = Debug|Win32
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Release|x64.ActiveCfg = Release|x64
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Release|x64.Build.0 = Release|x64
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Release|x86.ActiveCfg = Release|Win32
+		{588F1166-2BD2-408F-8076-BE2730CC7C10}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
