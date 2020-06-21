@@ -12,6 +12,7 @@ Release/
 *.obj
 *.suo
 .vs/
+*.sln
 
 # Precompiled Headers
 *.gch
