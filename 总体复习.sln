@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "include用法", "include用法\include用法.vcxproj", "{B3A9D011-D41F-44BA-9E58-3266C6606062}"
 EndProject
@@ -82,6 +82,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17.4 二进制文件读写", "17.4 二进制文件读写\第17章 二进制文件和文本文件.vcxproj", "{F1FB3E5E-1395-424D-84F2-ABE0C72CCAE5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17.5 二进制文件随机读取", "17.5 二进制文件随机读取\第17章5 二进制文件随机读取.vcxproj", "{0A1E8996-C81F-4EC5-BA59-5D6E33063F50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14.5 模板类5非约束模板友元函数", "14.5 模板类5非约束模板友元函数\14.5 模板类5非约束模板友元函数.vcxproj", "{6B7BA736-163C-4575-851D-1121F48DD7E4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "预处理器重定义", "预处理器重定义\预处理器重定义.vcxproj", "{683A3515-E125-4078-8848-37BD62CB142C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -407,8 +411,27 @@ Global
 		{0A1E8996-C81F-4EC5-BA59-5D6E33063F50}.Release|x64.Build.0 = Release|x64
 		{0A1E8996-C81F-4EC5-BA59-5D6E33063F50}.Release|x86.ActiveCfg = Release|Win32
 		{0A1E8996-C81F-4EC5-BA59-5D6E33063F50}.Release|x86.Build.0 = Release|Win32
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Debug|x64.ActiveCfg = Debug|x64
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Debug|x64.Build.0 = Debug|x64
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Debug|x86.Build.0 = Debug|Win32
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x64.ActiveCfg = Release|x64
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x64.Build.0 = Release|x64
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x86.ActiveCfg = Release|Win32
+		{6B7BA736-163C-4575-851D-1121F48DD7E4}.Release|x86.Build.0 = Release|Win32
+		{683A3515-E125-4078-8848-37BD62CB142C}.Debug|x64.ActiveCfg = Debug|x64
+		{683A3515-E125-4078-8848-37BD62CB142C}.Debug|x64.Build.0 = Debug|x64
+		{683A3515-E125-4078-8848-37BD62CB142C}.Debug|x86.ActiveCfg = Debug|Win32
+		{683A3515-E125-4078-8848-37BD62CB142C}.Debug|x86.Build.0 = Debug|Win32
+		{683A3515-E125-4078-8848-37BD62CB142C}.Release|x64.ActiveCfg = Release|x64
+		{683A3515-E125-4078-8848-37BD62CB142C}.Release|x64.Build.0 = Release|x64
+		{683A3515-E125-4078-8848-37BD62CB142C}.Release|x86.ActiveCfg = Release|Win32
+		{683A3515-E125-4078-8848-37BD62CB142C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {518016FF-8370-48A8-90F7-2490B9AB54A8}
 	EndGlobalSection
 EndGlobal
