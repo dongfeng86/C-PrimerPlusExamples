@@ -12,11 +12,12 @@ Release/
 *.obj
 *.suo
 .vs/
-*.sln
+*.user
 
 # Precompiled Headers
 *.gch
 *.pch
+
 
 # Compiled Dynamic libraries
 *.so
