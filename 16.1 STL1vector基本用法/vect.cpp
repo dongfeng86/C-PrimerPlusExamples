@@ -4,6 +4,7 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include <algorithm>
 
 struct SReview
 {
@@ -74,6 +75,10 @@ int main()
 		cout << "Swapping Oldlist with books:\n";
 		for (pIter = arBooks.begin(); pIter != arBooks.end(); pIter++)
 			ShowReview(*pIter);
+
+		//add at 2020.6.28,
+		std::for_each(arBooks.begin(), arBooks.end(), ShowReview);
+		//std::sort(arBooks.begin(),arBooks.end(),)
 	}
 	else
 		cout << "nothing entered,nothing gained.\n";
