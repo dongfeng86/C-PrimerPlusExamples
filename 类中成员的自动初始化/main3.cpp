@@ -20,5 +20,8 @@ int main3()
 	A a;
 	a.Print();
 
+	double ar[] = { 5.6,7,8 };
+	ar[8.9] = 4;
+
 	return 1;
 }

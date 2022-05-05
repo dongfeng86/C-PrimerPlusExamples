@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="预处理器重定义.cpp">
+    <ClCompile Include="类的成员函数做参数传递.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="嵌套宏.cpp">
+    <ClCompile Include="源.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

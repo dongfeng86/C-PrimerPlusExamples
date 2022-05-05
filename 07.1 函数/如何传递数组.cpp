@@ -1,4 +1,5 @@
 #include<iostream>
+#include <assert.h>
 using namespace std;
 
 const int MAX = 5;
@@ -17,11 +18,11 @@ void Swap(T &a, T &b);
 
 int main()
 {
+	//assert(0);
 #ifdef __cplusplus
 	std::cout << "该文件定义了__cplusplus!\n";
 
 #endif // __cplusplus
-
 
 	//调用模板函数
 	int i = 10;
@@ -104,7 +105,6 @@ int main()
 //		arr[i] *= r;
 //	}
 //}
-
 
 template<typename T>
 void Swap(T &a, T &b)

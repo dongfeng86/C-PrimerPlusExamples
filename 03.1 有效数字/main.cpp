@@ -18,5 +18,8 @@ int main()
 
 	cout << "mint= " << mint << "and a million mints= ";
 	cout << million*mint << endl;
+
+	double ar[] = { 5.6,7,8 };
+	ar[8.9] = 4;
 	return 0;
 }
