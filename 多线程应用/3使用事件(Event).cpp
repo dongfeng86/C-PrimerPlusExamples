@@ -37,8 +37,10 @@ int main()
 unsigned int __stdcall Fun(void *pPM)
 {
 	int nThreadNum = *(int *)pPM;
-	//SetEvent(g_hThreadEvent); //触发事件
 
+	//？不知道什么缘故，SetEvent放在前面，输出会出错，删掉Sleep或者把SetEvent放在后面
+	//程序响应即可正常，怀疑和Sleep函数有关系
+	//SetEvent(g_hThreadEvent); //触发事件
 	Sleep(50);//some work should to do
 	SetEvent(g_hThreadEvent); //触发事件
 
