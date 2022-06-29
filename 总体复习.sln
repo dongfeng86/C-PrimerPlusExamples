@@ -113,7 +113,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "日志文件如何写", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "子类对象析构时发生了什么", "子类对象析构时发生了什么\子类对象析构时发生了什么.vcxproj", "{56AAF4FD-74F2-4FD0-A195-130ABD21294D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单例模式探究", "单例模式探究\单例模式探究.vcxproj", "{6DA76CC5-D1F9-4AD2-B111-E1D6F42E692A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "单例模式探究（未完成）", "单例模式探究\单例模式探究.vcxproj", "{6DA76CC5-D1F9-4AD2-B111-E1D6F42E692A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "字符的几种输入试验", "字符的几种输入试验\字符的几种输入试验.vcxproj", "{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -567,6 +569,14 @@ Global
 		{6DA76CC5-D1F9-4AD2-B111-E1D6F42E692A}.Release|x64.Build.0 = Release|x64
 		{6DA76CC5-D1F9-4AD2-B111-E1D6F42E692A}.Release|x86.ActiveCfg = Release|Win32
 		{6DA76CC5-D1F9-4AD2-B111-E1D6F42E692A}.Release|x86.Build.0 = Release|Win32
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Debug|x64.ActiveCfg = Debug|x64
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Debug|x64.Build.0 = Debug|x64
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Debug|x86.ActiveCfg = Debug|Win32
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Debug|x86.Build.0 = Debug|Win32
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Release|x64.ActiveCfg = Release|x64
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Release|x64.Build.0 = Release|x64
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Release|x86.ActiveCfg = Release|Win32
+		{A7716AB5-5FC2-4AFB-AC6E-4DA744EEC95F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
