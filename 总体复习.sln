@@ -123,6 +123,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StackOverflow", "StackOverf
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "虚函数表", "虚函数表\虚函数表.vcxproj", "{3E8777D5-E8CD-400B-BC7B-5BF6E7106EAC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "关于字符常量", "关于字符常量\关于字符常量.vcxproj", "{BF88A988-C999-43C9-9A6A-7F8B59951901}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -607,6 +609,14 @@ Global
 		{3E8777D5-E8CD-400B-BC7B-5BF6E7106EAC}.Release|x64.Build.0 = Release|x64
 		{3E8777D5-E8CD-400B-BC7B-5BF6E7106EAC}.Release|x86.ActiveCfg = Release|Win32
 		{3E8777D5-E8CD-400B-BC7B-5BF6E7106EAC}.Release|x86.Build.0 = Release|Win32
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Debug|x64.ActiveCfg = Debug|x64
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Debug|x64.Build.0 = Debug|x64
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Debug|x86.Build.0 = Debug|Win32
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Release|x64.ActiveCfg = Release|x64
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Release|x64.Build.0 = Release|x64
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Release|x86.ActiveCfg = Release|Win32
+		{BF88A988-C999-43C9-9A6A-7F8B59951901}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
