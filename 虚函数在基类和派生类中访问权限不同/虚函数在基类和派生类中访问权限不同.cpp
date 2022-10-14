@@ -13,10 +13,16 @@ class CBase
 {
 public:
 	CBase() {}
+
+	virtual int GetInt()
+	{
+		return m_iBase;
+	}
 private:
 	virtual void Print() {
 		std::cout << "现在在基类中调用Print" << std::endl;
 	}
+	int m_iBase;
 };
 
 class CDerived :public CBase
@@ -26,6 +32,15 @@ public:
 	virtual void Print() {
 		std::cout << "现在在派生类中调用Print" << std::endl;
 	}
+
+	virtual int GetInt()
+	{
+		return m_iDerived;
+	}
+
+private:
+	int m_iDerived;
+
 };
 
 int main()

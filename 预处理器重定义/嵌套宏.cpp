@@ -16,6 +16,9 @@ using namespace std;
 #define foo2(x) x##123
 #define foo123 "hehe"
 
+#define Str1 "hello"
+#define Cat2Str(x,y) x#y
+
 void main()
 {
 	printf("%c\n", B(1));       // B(1)------〉'1'
@@ -43,8 +46,15 @@ void main()
 	printf("%s\n", g(1)g(2));		//输出：12
 	printf("%s\n", f(g(1), g(2)));	//输出：12
 	//这两个例子很特殊，我原以为编译器不会识别g(1)g(2),事实上，编译后会识别连在一起的宏，然后分别展开。
-	//宏展开过程为：因为f(a,b)的红参数前后有#或者##，直接从外层展开。
+	//宏展开过程为：因为f(a,b)的宏参数前后有#或者##，直接从外层展开。
 	//f(g(1), g(2))→g(1)##g(2)→g(1)g(2)→“12”
+
+	printf("%s\n", Cat2Str(Str1, ",nihao"));	//输出：hello",nihao"
+	printf("%s\n", Cat2Str(Str1, Str1));		//输出：helloStr1
+	//这个例子也比较经典，当宏展参数前有#时，这个参数被当作字符串
+	//Cat2Str(Str1, Str1)宏展开过程为：
+	//因为Cat2Str(x,y)的y参数前有#，直接将后面的参数转为字符串(也就是该宏参数先从外层展开)
+	//Cat2Str(Str1, Str1)→"hello""Str1"→"helloStr1"
 
 	printf("%s\n", foo2(foo));
 	//最后,上个经典例子吧。 foo2(foo)的展开可不是abc123哦。
