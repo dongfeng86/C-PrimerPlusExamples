@@ -46,6 +46,16 @@ int main()
 		lolas[ct]->Set();
 	}
 
+	//下面几行代码只是说明：在多继承中，如果将子类的指针强制转换为基类指针，指针指向的地址会变
+	//，这个变化后的地址实际是不同虚函数表的地址
+	SingingWaiter* pSingerWait = new SingingWaiter;
+	Worker* pWor = (Worker*)pSingerWait;
+	Singer* pSinger = (Singer*)pSingerWait;
+	Waiter* pWaiter = (Waiter*)pSingerWait;
+	//注意，delete了多重继承中基类的指针，由于基类的构造函数是virtual的，因此，调用了子类的析构函数，子类再依次调用基类的析构函数
+	delete pWor;
+	//delete pSingerWait;
+
 	cout << "\nHere is your staff:\n";
 	for (int i = 0; i < ct; i++)
 	{
