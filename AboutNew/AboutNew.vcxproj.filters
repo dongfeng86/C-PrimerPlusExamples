@@ -15,22 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MSDN多线程实例.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1原子操作.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="2使用关键段%28CS%29进行线程同步.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="3使用事件(Event).cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="秒杀多线程1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="秒杀多线程2.cpp">
+    <ClCompile Include="源.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

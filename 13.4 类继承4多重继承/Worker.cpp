@@ -22,6 +22,7 @@ void Worker::Get()
 
 Worker::~Worker()
 {
+	std::cout << "\nenter the Worker destruction";
 
 }
 
@@ -36,6 +37,11 @@ void Waiter::Get()
 	cin >> m_iPanache;
 	while (cin.get() != '\n')
 		continue;
+}
+
+Waiter::~Waiter()
+{
+	std::cout << "\nenter the Waitor destruction";
 }
 
 void Waiter::Set()
@@ -76,6 +82,11 @@ void Singer::Get()
 
 char * Singer::m_pv[Singer::Vtypes] = { "other","alot","contalto","soprano","bass","baritone","tenor"};
 
+Singer::~Singer()
+{
+	std::cout << "\nenter the Singer destruction";
+}
+
 void Singer::Set()
 {
 	cout << "enter singer's name: ";
@@ -100,6 +111,11 @@ void SingingWaiter::Get()
 {
 	Waiter::Get();
 	Singer::Get();
+}
+
+SingingWaiter::~SingingWaiter()
+{
+	std::cout << "\nenter the SingingWaiter destrucion! ";
 }
 
 void SingingWaiter::Set()
