@@ -22,8 +22,7 @@ void Worker::Get()
 
 Worker::~Worker()
 {
-	std::cout << "\nenter the Worker destruction";
-
+	std::cout << "enter the Worker destruction";
 }
 
 void Waiter::Data() const

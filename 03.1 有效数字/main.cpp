@@ -1,9 +1,13 @@
 //floatnum.cpp--floating-point types
 #include <iostream>	
+//#include <wingdi.h>
 int main()
 {
 	using namespace std;
 
+	char ch = 'A';
+	int iSpe = 'ABCD';
+	//BITMAPFILEHEADER M;
 
 	cout.setf(ios_base::fixed, ios_base::floatfield);
 	float tub = 10.0 / 3.0;
@@ -20,6 +24,6 @@ int main()
 	cout << million*mint << endl;
 
 	double ar[] = { 5.6,7,8 };
-	ar[8.9] = 4;
+	//ar[8] = 4;
 	return 0;
 }
