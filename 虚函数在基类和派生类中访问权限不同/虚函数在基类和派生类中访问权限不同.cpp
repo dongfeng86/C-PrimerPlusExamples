@@ -14,11 +14,13 @@ class CBase
 public:
 	CBase() {}
 
+	//情况1：如果基类是public，而派生类是Private
 	virtual int GetInt()
 	{
 		return m_iBase;
 	}
 private:
+	//情况2：如果基类是Private,派生类是Public
 	virtual void Print() {
 		std::cout << "现在在基类中调用Print" << std::endl;
 	}
@@ -32,7 +34,7 @@ public:
 	virtual void Print() {
 		std::cout << "现在在派生类中调用Print" << std::endl;
 	}
-
+private:
 	virtual int GetInt()
 	{
 		return m_iDerived;
@@ -45,9 +47,13 @@ private:
 
 int main()
 {
+	//第一种情况：我们考察对象类型
 	CDerived derived;
-	derived.Print();	//ok，对派生类CDerived来讲，Print()是ppublic的
+	derived.Print();	//ok，对派生类CDerived来讲，Print()是Public的
+	//derived.GetInt();	//编译错误，对派生类对象来说，GetInt()是Private的，不可访问。
 
+	//第二种情况：我们考察指针类型
 	CBase* pBase = &derived;
 	//pBase->Print();	//编译错误，因为对基类CBase来讲，Print()是private型的，哪怕实际调用的派生类的Print是public的
+	pBase->GetInt();	//ok,对基类指针来说，GetInt是public的，可以访问，而且调用的是派生类方法；哪怕在派生类中该方法是private的
 }

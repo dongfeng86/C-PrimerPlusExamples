@@ -37,8 +37,3 @@ int main()
 	//cout << b2.value << "\t" << b2.a.value << endl;
 	return 0;
 }
-
-#define cat(a, b) a ## b
-#define xcat(x, y) cat(x, y)
-cat(cat(1, 2), 3);
-xcat(xcat(1, 2), 3);

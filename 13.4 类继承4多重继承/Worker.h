@@ -38,8 +38,7 @@ public:
 		:Worker(s,n),m_iPanache(p){ }
 	Waiter(const Worker & wk,int p=0)
 		:Worker(wk),m_iPanache(p){ }
-	~Waiter() { 
-		std::cout << "\nenter the Waiter destructor!"; }
+	~Waiter();
 
 	void Set();
 	void Show() const;
@@ -62,8 +61,7 @@ public:
 	Singer(const Worker & wk,int v=other)
 		:Worker(wk),m_iVoice(v){ }
 
-	~Singer() { 
-		std::cout << "\nenter the Singer destructor"; }
+	~Singer();
 	void Set();
 	void Show() const;
 };
@@ -77,8 +75,7 @@ protected:
 	void Get();
 public:
 	SingingWaiter() {}
-	~SingingWaiter() { 
-		std::cout << "\nenter the SingingWaitor"; }
+	~SingingWaiter();
 	/*注意，这是多重继承一个经典的用法。当基类为虚时，禁止信息通过中间类自动传递给基类。例如下面构造函数的定义，
 	Waiter(s,n,p)和Singer(s,n,v)不会调用基类Worker；如果没有Worker(s,n)，编译器将调用基类的默认构造函数；如果写出
 	了Worker(s,n)，则编译器调用Worker的带参构造函数*/
