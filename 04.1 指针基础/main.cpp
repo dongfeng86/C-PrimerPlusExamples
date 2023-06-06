@@ -1,8 +1,20 @@
 //这部分要重新整理
 #include <iostream>
 
+void fun(char ch[5])
+{
+	//请注意，ch不是一个数组，仅仅是一个指针的长度
+	int i = sizeof(ch);	
+	printf(("\n当前的i=%d\n"), i);
+}
+
 int main()
 {
+	char ar[] = { 1,3,4,5,6 };
+	char arNew[10];
+	int i1 = sizeof(ar);
+	int i2 = sizeof(arNew);
+	fun(ar);
 	using namespace std;
 	//指针到底占几位，在X86的情况下占据32位，在X64的情况下占据64位。
 	cout << "现在，我们看下指针到底占几位？" << endl;

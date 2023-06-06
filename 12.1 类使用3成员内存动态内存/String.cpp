@@ -57,6 +57,11 @@ String & String::operator=(const String & st)
 		return *this;
 	delete[] str;
 	len = st.len;
+
+	//另外一种方式来实现,这个需要比较深入的理解
+	char* psz = *((char**)&st);
+	int iLenNew = sizeof(psz);
+
 	str = new char[len + 1];
 	strcpy_s(str, len+1,st.str);
 	return *this;

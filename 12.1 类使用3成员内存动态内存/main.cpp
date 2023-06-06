@@ -34,6 +34,11 @@ int main()
 	cout << "Hi,what is your name?\n>>";
 	cin >> name;
 
+	name = "hello";
+	String sNew = name;
+	name = "MyHello";
+	sNew = name;
+
 	cout << name << ",please enter up to " << ArSize
 		<< " short sayings <empty line to quit>:\n";
 	String sayings[ArSize];
