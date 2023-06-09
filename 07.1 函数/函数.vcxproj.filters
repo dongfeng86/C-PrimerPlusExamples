@@ -21,5 +21,8 @@
     <ClCompile Include="函数指针.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="overloadedFun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
