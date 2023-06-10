@@ -131,6 +131,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindExcelCom", "FindExcelCo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "函数引用参数", "函数引用参数\函数引用参数.vcxproj", "{087890BE-20A7-408A-9BB8-E5ABB17D54A4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13.5 子类隐藏基类方法", "13.5 子类隐藏基类方法\13.5 子类隐藏基类方法.vcxproj", "{6F5A1526-12CE-4DB6-9B8E-57494111D092}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -647,6 +649,14 @@ Global
 		{087890BE-20A7-408A-9BB8-E5ABB17D54A4}.Release|x64.Build.0 = Release|x64
 		{087890BE-20A7-408A-9BB8-E5ABB17D54A4}.Release|x86.ActiveCfg = Release|Win32
 		{087890BE-20A7-408A-9BB8-E5ABB17D54A4}.Release|x86.Build.0 = Release|Win32
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Debug|x64.ActiveCfg = Debug|x64
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Debug|x64.Build.0 = Debug|x64
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Debug|x86.Build.0 = Debug|Win32
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Release|x64.ActiveCfg = Release|x64
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Release|x64.Build.0 = Release|x64
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Release|x86.ActiveCfg = Release|Win32
+		{6F5A1526-12CE-4DB6-9B8E-57494111D092}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
